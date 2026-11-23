@@ -1,0 +1,12 @@
+Run Unit Tests (with Memory Leak & UB Detection)
+
+cmake -B build-debug -DCMAKE_BUILD_TYPE=Debug
+cmake --build build-debug
+ctest --test-dir build-debug --output-on-failure
+
+Run Benchmarks (with Full -O3 Optimization)
+
+cmake -B build-release -DCMAKE_BUILD_TYPE=Release
+cmake --build build-release
+./build-release/run_benchmarks
+
