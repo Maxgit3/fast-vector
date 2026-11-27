@@ -4,6 +4,8 @@ cmake -B build-debug -DCMAKE_BUILD_TYPE=Debug
 cmake --build build-debug
 ctest --test-dir build-debug --output-on-failure
 
+Run ./build-debug/run_tests --gtest_filter=*VisualTraceDemo* whenever yout to view ASCII memory flowchart
+
 Run Benchmarks (with Full -O3 Optimization)
 
 cmake -B build-release -DCMAKE_BUILD_TYPE=Release
